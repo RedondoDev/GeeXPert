@@ -12,6 +12,7 @@
     <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20">
     <img alt="MySQL" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" height="20">
     <img alt="Docker" src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" height="20">
+    <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" height="20">
 </div>
 
 <br>
@@ -27,12 +28,13 @@ Every hero needs a quest log. Keep track of your played, pending and completed g
 GeeXPert is a web application for video game fans. In GeeXPert you can discover video games, create your own video game collection and track the progress of them.
 Also, you can discover video games based on your tastes through our artificial intelligence assistant.
 <br><br>
-I hope you enjoy it.
+*I hope you enjoy it - RedondoDEV*
 
 ## Table of Contents
 - [Images](#images)
 - [Technologies](#technologies)
 - [Code](#code)
+- [Resources](#resources)
 - [Author](#author)
 - [License](#license)
 
@@ -46,7 +48,7 @@ I hope you enjoy it.
 |<img src="https://github.com/user-attachments/assets/27a66c5f-5524-41e3-b502-3d5c26d07c2b" width="500"/>|<img src="https://github.com/user-attachments/assets/0709474b-e6ea-4f76-a634-23a18213ac92" width="500"/>|
 | Collection | Recommendations |
 |<img src="https://github.com/user-attachments/assets/49300689-a3d2-49de-9270-ca43e55dc8d0" width="500"/>|<img src="https://github.com/user-attachments/assets/8a41aed8-2b8b-494f-800a-69b497cae0f4" width="500"/>|
-| Card | Card in Collection |
+| Card out of Collection | Card in Collection |
 |<img src="https://github.com/user-attachments/assets/3c98c644-cb08-4c8f-90e1-20a13991a499" width="200"/>|<img src="https://github.com/user-attachments/assets/f9bae418-55c4-4837-8329-3b35c68cdbfe" width="200"/>|
 
 ## Technologies
@@ -78,6 +80,7 @@ I hope you enjoy it.
       <li>llama3.2:3b</li>
     </ul>
     <li>Maven</li>
+    <li>Postman</li>
     <li>Docker</li>
     </ul>
 </ul>
@@ -88,6 +91,10 @@ The source code can be found at the following links:
 - [GeeXPert-Frontend](https://github.com/RedondoDev/GeeXPert-Frontend)
 
 *NOTE: The installation process and more details about the code are in these repositories.*
+
+## Resources
+- https://github.com/ollama/ollama
+- https://api-docs.igdb.com/#getting-started
 
 ## Author
 <table>
