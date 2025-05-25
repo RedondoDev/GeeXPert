@@ -35,6 +35,7 @@ Also, you can discover video games based on your tastes through our artificial i
 - [Technologies](#technologies)
 - [Code](#code)
 - [Resources](#resources)
+- [Installation](#installation)
 - [Author](#author)
 - [License](#license)
 
@@ -95,6 +96,137 @@ The source code can be found at the following links:
 ## Resources
 - https://github.com/ollama/ollama
 - https://api-docs.igdb.com/#getting-started
+
+## Installation
+
+### 🎮 GeeXPert Installation Guide
+
+This guide describes the necessary steps to run the GeeXPert application on your local computer.
+
+---
+
+#### 🔧 Backend
+
+##### 1. Clone the Repository
+
+Go to the official repository: [GeeXPert-Backend](https://github.com/RedondoDev/GeeXPert-Backend)
+
+1. Open the command console
+2. Navigate to the path where you want to save the project
+3. Execute the following command:
+
+```bash
+git clone https://github.com/RedondoDev/GeeXPert-Backend.git
+```
+
+##### 2. Install Docker Desktop
+
+1. Download and install Docker Desktop from: [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
+2. During installation, a window will appear requesting the installation of the WSL subsystem
+3. Press any key to proceed with the installation
+4. Once installed, open Docker Desktop so the service is running (you can minimize the application)
+
+##### 3. Configure Environment Variables
+
+1. Navigate to the root folder of the cloned project
+2. Create a file named `.env`
+3. Copy the following content into the file:
+
+```env
+DATABASE_URL=jdbc:mysql://mysql:3306/GeeXPert?allowPublicKeyRetrieval=true&useSSL=false
+DATABASE_USERNAME=
+DATABASE_PASSWORD=
+IGBD_ID=
+IGBD_KEY=
+JWT_KEY=
+```
+
+##### 4. Complete the Environment Variables
+
+You must fill in the following parameters:
+
+###### `DATABASE_USERNAME`
+- Database username
+- No spaces or special characters
+
+###### `DATABASE_PASSWORD`
+- Database password
+
+###### `IGBD_ID` and `IGBD_KEY`
+- Register with the IGDB API following this guide: [IGDB Account Creation](https://api-docs.igdb.com/#account-creation)
+- Once you obtain your ID and KEY, set them in the corresponding variables
+
+###### `JWT_KEY`
+- Generate a JWT key from: [JWT Secret Generator](https://jwtsecret.com/generate)
+- **Important**: Select a length of **256 bits**
+- Copy the generated key using the copy button
+
+##### 5. Configure Ollama
+
+Execute the following commands in the console:
+
+```bash
+# Access the Ollama container
+docker exec -it ollama /bin/sh
+
+# Download the AI model
+ollama pull llama3.2:3b
+
+# Verify the installation
+ollama list
+```
+
+##### 6. Run the Backend
+
+1. Open a command console
+2. Navigate to the root path of the backend project
+3. Execute:
+
+```bash
+docker compose up --build
+```
+
+---
+
+#### 🖥️ Frontend
+
+##### 1. Clone the Repository
+
+Go to the official repository: [GeeXPert-Frontend](https://github.com/RedondoDev/GeeXPert-Frontend)
+
+1. Open the command console
+2. Navigate to the path where you want to save the project
+3. Execute:
+
+```bash
+git clone https://github.com/RedondoDev/GeeXPert-Frontend.git
+```
+
+##### 2. Run the Frontend
+
+1. Open a command console
+2. Navigate to the root path of the frontend project
+3. Execute:
+
+```bash
+docker compose up --build
+```
+
+---
+
+#### 🚀 Application Access
+
+Once all steps are completed, you can access the web application from your browser at:
+
+**[http://localhost:4200/](http://localhost:4200/)**
+
+---
+
+#### 📧 Support
+
+For any issues or problems with the installation, contact us:
+
+**Email**: [JavierRedondoDev@gmail.com](mailto:JavierRedondoDev@gmail.com)
 
 ## Author
 <table>
